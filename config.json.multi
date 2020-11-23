@@ -1,0 +1,7 @@
+{
+    "ts": "./ts.h5",
+    "number_time_points": [[0]],
+    
+    "outets": "edgetimeseries.csv",
+    
+}

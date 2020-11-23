@@ -13,13 +13,29 @@ ts = h5read(config.ts,'/timeseries');
 
 
 if x == time 
+    
     n = y
     
-else 
+elseif y == time 
+    
     n = x
     
     ts = ts';
+    
+else
+    
+    both = [x y];
+    
+    [n,idx] =  min(both);
+    
+    if idx == 1
+        ts = ts';
+        
+    end
+    
 end
+
+
 
 z = zscore(ts);                 % z-score
 

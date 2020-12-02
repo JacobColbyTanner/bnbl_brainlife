@@ -1,0 +1,14 @@
+#!/bin/bash
+#PBS -l nodes=1:ppn=1
+#PBS -l walltime=00:30:00
+#PBS -l vmem=8gb
+#PBS -N App-Template-Matlab
+
+# Copyright (c) 2020 brainlife.io at University of Texas at Austin and Indiana University
+# 
+# This is the main file run by the brainlife.io orchestration system
+#
+# Author: Franco Pestilli
+
+# run the actual MatLab code
+./main.m

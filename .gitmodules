@@ -1,0 +1,3 @@
+[submodule "BCT"]
+	path = BCT
+	url = https://github.com/brainlife/BCT.git

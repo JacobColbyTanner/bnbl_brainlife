@@ -11,4 +11,13 @@
 # Author: Franco Pestilli
 
 # run the actual MatLab code
+
+%This portion is Francos code 
+set -e
+set -x
+
+export MAXMEM=19000000
+time singularity exec -e docker://brainlife/mcr:r2019a ./compiled/main
+%Stops here
+
 ./main.m

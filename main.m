@@ -10,13 +10,7 @@ time = config.number_time_points;
 ts = h5read(config.ts,'/timeseries');
 
 
-%This portion is Francos code 
-set -e
-set -x
 
-export MAXMEM=19000000
-time singularity exec -e docker://brainlife/mcr:r2019a ./compiled/main
-%Stops here
 
 %Then, edge time series...
 
